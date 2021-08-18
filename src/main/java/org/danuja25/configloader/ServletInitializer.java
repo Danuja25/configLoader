@@ -1,4 +1,4 @@
-package org.danuja25.configLoader;
+package org.danuja25.configloader;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

@@ -1,4 +1,4 @@
-package org.danuja25.configLoader;
+package org.danuja25.configloader;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
