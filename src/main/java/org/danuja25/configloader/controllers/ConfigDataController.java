@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -21,7 +22,7 @@ public class ConfigDataController implements IConfigDataController {
     private static final Logger logger = LoggerFactory.getLogger(ConfigDataController.class);
 
     @Override
-    @GetMapping("/configs")
+    @RequestMapping(value = "/configs", method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity getAllConfigs() {
         Config config1 = new Config(1,SYSTEM_CONFIG,"System name","ePhysics","Physics web");
         Config config2 = new Config(2,USER_CONFIG,"Notifications enabled","true","Notifications");
